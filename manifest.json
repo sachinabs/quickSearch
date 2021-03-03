@@ -1,0 +1,14 @@
+{
+
+	"manifest_version": 2,
+	"name": "Quick Search",
+	"description": "This extension helps you to search the query on different search engines ",
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+      "tabs"
+	]
+}

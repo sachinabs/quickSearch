@@ -1,0 +1,47 @@
+body
+{
+    padding: 5px;
+    background-image: url("front.png");
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+}
+.search{
+    display: block;
+    height: 30%;
+    
+}
+
+input[type="text"]
+{
+        width: 97%;
+        height: 30px;
+}
+
+input[type="submit"]
+{
+    float: right;
+    border: white;
+    background-color: rgb(0, 204, 255);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    font-weight: bold   ;
+    width: 120px;
+   
+    
+}
+input[type="submit"]:hover
+{
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+}
+p{
+    color: red;
+    font-weight: bold;
+    float: right;
+}
+#reset
+{
+    background-color: rgb(29, 159, 192);
+}
