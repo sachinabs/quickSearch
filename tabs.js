@@ -55,6 +55,7 @@ function forQr() {
   
   makeCode();
 
+
   $("#text")
     .on("blur", function () {
       makeCode();
@@ -67,17 +68,33 @@ function forQr() {
 }
 
 
-// function call triggers:
+// function call trigger for get qr:
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("qrBut").addEventListener("click", forQr);
 });
 
+
+
 function pageReload() {
   location.reload();
 }
 
-// function call triggers: , 
+// function call trigger for reset page , 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("reset").addEventListener("click", pageReload);
+});
+
+
+// for quick search:
+
+function quick()
+{
+  let keyWord = document.getElementById("s").value;
+  window.open("https://www.pexels.com/search/"+ keyWord);
+}
+
+// function call trigger for image search , 
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("imageSearch").addEventListener("click", quick);
 });
